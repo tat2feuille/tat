@@ -1,6 +1,15 @@
 fucked up and evil function to free memory in a function return
 
 ```c
+#include <stdlib.h>
+
+int  tat(void *x, void *y)
+{
+    free(x);
+    free(y);
+    return (0);
+}
+
 int	whathaveyoudone(void)
 {
 	char	*a;
